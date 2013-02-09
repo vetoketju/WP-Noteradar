@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{29bccb49-0ade-4673-b86e-505027ebc361}" Title="Note Radar" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Ville Valta" Description="Note Radar detects the current pitch, note and octave from microphone input." Publisher="Ville Valta" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">1k_appIconNoteRadar.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_MEDIALIB" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="WP_PitchdetectionToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">1k_appIconNoteRadar.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Note Radar</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
